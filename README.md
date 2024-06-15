@@ -4,8 +4,7 @@
 
 因为db_operator类的init函数中的数据库信息为空
 
-![image-20240615215952451](C:\Users\86181\AppData\Roaming\Typora\typora-user-images\image-20240615215952451.png)
-
+![image](https://github.com/HOWILLMAKEIT/-C-/assets/157001241/c0bae388-7485-44ba-98e6-47dd902a3163)
 如果想要正确运行可以在本地建一个相同的数据库
 
 数据库信息如下：
@@ -18,13 +17,13 @@
 
 contacts表相应设定：
 
-![image-20240615220148771](C:\Users\86181\AppData\Roaming\Typora\typora-user-images\image-20240615220148771.png)
+![image](https://github.com/HOWILLMAKEIT/-C-/assets/157001241/f1567b68-31af-4b08-be94-b9ed3cf955df)
 
 其中PK表示主键、NN表示非空（NOT NULL）、UQ表示unique、AI表示自增
 
-accounts表相应设定：、
+accounts表相应设定：
 
-![image-20240615220251120](C:\Users\86181\AppData\Roaming\Typora\typora-user-images\image-20240615220251120.png)
+![image](https://github.com/HOWILLMAKEIT/-C-/assets/157001241/0bc85841-3b78-495f-b26e-bfb55de88787)
 
 外键设置（重要）
 
@@ -37,5 +36,4 @@ accounts表相应设定：、
 ## 视频展示
 
 【【华南理工24C++】乌萨奇通讯录-云端数据库、可视化界面、可发送邮件】https://www.bilibili.com/video/BV1cf421R7pf?vd_source=50cd1a4c87dfd3bdc7a70a5d22a771ed
-
 
