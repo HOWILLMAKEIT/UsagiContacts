@@ -5,6 +5,7 @@
 因为db_operator类的init函数中的数据库信息为空
 
 ![image](https://github.com/HOWILLMAKEIT/-C-/assets/157001241/c0bae388-7485-44ba-98e6-47dd902a3163)
+
 如果想要正确运行可以在本地建一个相同的数据库
 
 数据库信息如下：
