@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Name_modify_func</class>
+ <widget class="QWidget" name="Name_modify_func">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>298</width>
+    <height>240</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>298</width>
+    <height>240</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>298</width>
+    <height>240</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>修改用户名</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>301</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#frame
+{
+	
+	border-image: url(:/background/屏幕截图 2024-06-01 172200.png);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>150</y>
+      <width>51</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0.6);</string>
+    </property>
+    <property name="text">
+     <string>确认修改</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="name_le">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>80</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#name_le
+{
+background-color: rgba(255, 255, 255,0.3);/* 透明度 */
+border-radius: 3px; /* 边框圆角 */
+font-size: 12pt; /* 文本字体大小 */
+}
+
+#name_le:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 1px dashed #fffac2;
+	border-radius: 3px;
+	background-color:#fffee2;
+	color: #000000;
+	selection-background-color: #298DFF;
+	selection-color: #F2F2F2;
+}
+#name_le:focus {
+    border: 1px dashed #fffac2;
+    border-radius: 3px;
+    background-color: #fffee2;
+    color: #000000;
+    selection-background-color: #298DFF;
+    selection-color: #F2F2F2;
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>80</y>
+      <width>53</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>用户名：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password_le">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>120</y>
+      <width>113</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#password_le
+{
+background-color: rgba(255, 255, 255,0.3);/* 透明度 */
+border-radius: 3px; /* 边框圆角 */
+font-size: 12pt; /* 文本字体大小 */
+}
+
+#password_le:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 1px dashed #fffac2;
+	border-radius: 3px;
+	background-color:#fffee2;
+	color: #000000;
+	selection-background-color: #298DFF;
+	selection-color: #F2F2F2;
+}
+#password_le:focus {
+    border: 1px dashed #fffac2;
+    border-radius: 3px;
+    background-color: #fffee2;
+    color: #000000;
+    selection-background-color: #298DFF;
+    selection-color: #F2F2F2;
+}
+
+</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>120</y>
+      <width>53</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>密码：</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

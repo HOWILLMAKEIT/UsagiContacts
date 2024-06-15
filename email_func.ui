@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Email_func</class>
+ <widget class="QWidget" name="Email_func">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>464</width>
+    <height>411</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>464</width>
+    <height>411</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>464</width>
+    <height>411</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>生日查询</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>0</y>
+     <width>411</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>-1</number>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>51</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>51</width>
+     <height>411</height>
+    </size>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>51</width>
+     <height>411</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color:rgb(249, 255, 240); /* 红色背景 */
+}
+</string>
+   </property>
+   <widget class="QToolButton" name="normal_pb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;近期生日&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/background/v2-5bf1fa2af20e843ecd19dbbc17d21f9d_r.jpg);
+QPushButton {
+    background-color: rgba(0, 0, 0, 0); /* 最后一个参数是透明度，0表示完全透明 */
+    border: none; /* 移除边框 */
+    /* 如果您希望文本也透明，可以设置text-color的透明度 */
+    color: rgba(255, 255, 255, 0); /* 白色文本，透明度为0 */
+}
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* 鼠标悬停时轻微的背景色，透明度0.2 */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.4); /* 按下时更明显的背景色，透明度0.4 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="birth_pb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;生日查询&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/background/屏幕截图 2024-06-01 110331.png);
+QPushButton {
+    background-color: rgba(0, 0, 0, 0); /* 最后一个参数是透明度，0表示完全透明 */
+    border: none; /* 移除边框 */
+    /* 如果您希望文本也透明，可以设置text-color的透明度 */
+    color: rgba(255, 255, 255, 0); /* 白色文本，透明度为0 */
+}
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* 鼠标悬停时轻微的背景色，透明度0.2 */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.4); /* 按下时更明显的背景色，透明度0.4 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="email_pb">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>120</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;生日邮件&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/background/DWS7G5GWUdVzjzJ.jpeg);
+QPushButton {
+    background-color: rgba(0, 0, 0, 0); /* 最后一个参数是透明度，0表示完全透明 */
+    border: none; /* 移除边框 */
+    /* 如果您希望文本也透明，可以设置text-color的透明度 */
+    color: rgba(255, 255, 255, 0); /* 白色文本，透明度为0 */
+}
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* 鼠标悬停时轻微的背景色，透明度0.2 */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.4); /* 按下时更明显的背景色，透明度0.4 */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

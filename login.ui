@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Login</class>
+ <widget class="QWidget" name="Login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>569</width>
+    <height>401</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>569</width>
+    <height>401</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>569</width>
+    <height>401</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Login</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QFrame" name="login_frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>-20</y>
+     <width>571</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">#login_frame
+{
+border-image: url(:/background/login_bg.jpg);
+}</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>140</y>
+      <width>151</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Rockwell Extra Bold</family>
+      <pointsize>26</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>LOGIN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>248</y>
+      <width>52</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bernard MT Condensed</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>密码     </string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="password_le">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>250</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#password_le
+{
+	background-color: rgba(255, 255, 255,0.3);
+	border-radius: 3px; /* 边框圆角 */
+	font-size: 12pt; /* 文本字体大小 */
+}
+#password_le:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+		border: 1px dashed #fff9b4;
+	border-radius: 3px;
+	background-color:#fffee2;
+	color: #000000;
+	selection-background-color: #298DFF;
+	selection-color: #F2F2F2;
+}
+#password_le:focus {
+    border: 1px dashed #fffac2;
+    border-radius: 3px;
+    background-color: #fffee2;
+    color: #000000;
+    selection-background-color: #298DFF;
+    selection-color: #F2F2F2;
+}</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>190</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bernard MT Condensed</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>用户名</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="login_pb">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>310</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bernard MT Condensed</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0.6);</string>
+    </property>
+    <property name="text">
+     <string>登录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="regist_pb">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>310</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Bernard MT Condensed</family>
+      <pointsize>11</pointsize>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255,0.6);
+</string>
+    </property>
+    <property name="text">
+     <string> 注册</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="username_le">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>190</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#username_le
+{
+background-color: rgba(255, 255, 255,0.3);/* 透明度 */
+border-radius: 3px; /* 边框圆角 */
+font-size: 12pt; /* 文本字体大小 */
+}
+
+#username_le:hover { /* 鼠标悬浮在QLineEdit时的状态 */
+	border: 1px dashed #fffac2;
+	border-radius: 3px;
+	background-color:#fffee2;
+	color: #000000;
+	selection-background-color: #298DFF;
+	selection-color: #F2F2F2;
+}
+#username_le:focus {
+    border: 1px dashed #fffac2;
+    border-radius: 3px;
+    background-color: #fffee2;
+    color: #000000;
+    selection-background-color: #298DFF;
+    selection-color: #F2F2F2;
+}
+
+</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>153</x>
+      <y>193</y>
+      <width>16</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>-10</x>
+       <y>0</y>
+       <width>48</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Bernard MT Condensed</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
