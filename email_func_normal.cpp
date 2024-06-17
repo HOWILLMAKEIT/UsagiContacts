@@ -20,15 +20,25 @@ void Email_func_normal::on_pushButton_clicked()
     QString days = ui->spinBox_3->text();
     int daysInt = days.toInt();
     //往前后各数daysInt天
-    //为什么加上user_id 在qt中就无法显示了？
     QSqlQuery query;
-    query.prepare("SELECT name, birth, phone, email, type FROM contacts WHERE user_id = :user_id "
-                  "AND "
-                "(DATE_FORMAT( birth, '%m%d' ) BETWEEN DATE_FORMAT(CURDATE()-INTERVAL :days DAY,'%m%d') AND DATE_FORMAT(CURDATE()+INTERVAL :days DAY,'%m%d')) ");
+    QDate currentDate = QDate::currentDate();
+    QDate past_searchDate = currentDate.addDays(-daysInt);
+    QDate future_searchDate = currentDate.addDays(daysInt);
+    if(past_searchDate.year()==currentDate.year()&&future_searchDate.year()==currentDate.year()){
+        query.prepare("SELECT name, birth, phone, email, type FROM contacts WHERE user_id = :user_id"
+                      "AND "
+                      "(DATE_FORMAT(birth,'%m%d') BETWEEN DATE_FORMAT(CURDATE()-INTERVAL :days DAY,'%m%d') AND DATE_FORMAT(CURDATE()+INTERVAL :days DAY,'%m%d'))");
+    }else //跨年
+    {
+        query.prepare("SELECT name, birth, phone, email, type FROM contacts WHERE user_id = :user_id"
+                      "AND "
+                      "((DATE_FORMAT(birth,'%m%d') BETWEEN DATE_FORMAT(CURDATE()-INTERVAL :days DAY,'%m%d') AND STR_TO_DATE('12.31','%m.%d')))"
+                      "OR"
+                      "(DATE_FORMAT(birth,'%m%d') BETWEEN STR_TO_DATE('1.1','%m.%d') AND DATE_FORMAT(CURDATE()+INTERVAL :days DAY,'%m%d'))");
+    }
     query.bindValue(":user_id", this->user_id);
-    query.bindValue(":days",daysInt);
+    query.bindValue(":days", daysInt);
     query.exec();
-
     this->model = new QSqlQueryModel(this);
     model->setQuery(std::move(query));
     ui->tableView->setSortingEnabled(true);
