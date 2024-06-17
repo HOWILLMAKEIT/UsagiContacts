@@ -36,6 +36,7 @@ accounts表相应设定：
 
 ## 资源文件下载
 链接: https://pan.baidu.com/s/1YvUgyTWtfwXwyEoDYtsUKA 提取码: puhh
+
 下载后在QT中添加resource文件夹，就可以正常显示背景图片以及发出各种音效。
 
 
