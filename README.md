@@ -34,6 +34,11 @@ accounts表相应设定：
 
 这样数据库就建好了，接着在qt中填写数据库的相关信息就可以正常运行程序
 
+## 资源文件下载
+链接: https://pan.baidu.com/s/1YvUgyTWtfwXwyEoDYtsUKA 提取码: puhh
+下载后在QT中添加resource文件夹，就可以正常显示背景图片以及发出各种音效。
+
+
 ## 视频展示
 
 【【华南理工24C++】乌萨奇通讯录-云端数据库、可视化界面、可发送邮件】https://www.bilibili.com/video/BV1cf421R7pf?vd_source=50cd1a4c87dfd3bdc7a70a5d22a771ed
